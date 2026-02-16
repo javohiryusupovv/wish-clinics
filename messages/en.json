@@ -1,0 +1,88 @@
+{
+  "Navbar": {
+    "services": "Services",
+    "doctors": "Doctors",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contacts": "Contacts",
+    "button": "Book Now"
+  },
+  "Hero": {
+    "badge": "PREMIUM SERVICE",
+    "title": "Professional Dentistry for the Whole Family",
+    "desc": "Modern treatment methods, highly qualified doctors, and a comfortable atmosphere in the heart of the city. We care about your smile.",
+    "btn_online": "Book Online",
+    "btn_services": "Our Services"
+  },
+  "Services": {
+    "title": "Our Services",
+    "all_services": "All Services",
+    "therapy": "Therapy",
+    "therapy_desc": "Gentle treatment of caries, pulpitis, and gum diseases using a microscope.",
+    "orthodontics": "Orthodontics",
+    "orthodontics_desc": "Bite correction of any complexity using aligners and modern bracket systems.",
+    "implant": "Implantation",
+    "implant_desc": "Tooth restoration in one day. Premium implants with a lifetime warranty.",
+    "esthetics": "Esthetics",
+    "esthetics_desc": "Creating a perfect 'Hollywood' smile: veneers, whitening, and restoration."
+  },
+  "Specialists": {
+    "title": "Our Specialists",
+    "subtitle": "A team of professionals with over 15 years of experience",
+    "dr_ivanov": {
+      "name": "Dr. Alexander Ivanov",
+      "role": "Chief Physician, Implant Surgeon",
+      "desc": "18 years of experience. Interned in Germany and Switzerland."
+    },
+    "dr_smirnova": {
+      "name": "Dr. Elena Smirnova",
+      "role": "Orthodontist",
+      "desc": "Specialist in correcting bites of any complexity."
+    },
+    "dr_petrov": {
+      "name": "Dr. Dmitry Petrov",
+      "role": "Dental Therapist",
+      "desc": "Master of artistic tooth restoration."
+    }
+  },
+  "Reviews": {
+    "title": "Patient Reviews",
+    "services": {
+      "therapy": "Caries treatment",
+      "esthetics": "Esthetic dentistry",
+      "pediatric": "Pediatric appointment",
+      "orthodontics": "Orthodontics",
+      "implant": "Implantation"
+    },
+    "texts": {
+      "r1": "I was very afraid of dentists since childhood, but here all fears passed. Painless, fast, and very high quality. Many thanks to Dr. Ivanov!",
+      "r2": "Had veneers done by Elena Smirnova. The result exceeded expectations! Now I can't stop smiling. The clinic is very cozy and stylish.",
+      "r3": "Brought my child for the first check-up. The doctor found a way immediately; my son didn't even cry. Now we will only come here.",
+      "r4": "Professional approach to every patient. Very satisfied with the whitening result.",
+      "r5": "Implantation was much easier than I expected. High level of medicine!",
+      "r6": "Polite staff and modern equipment. Caries treatment under a microscope is great.",
+      "r7": "The clinic is clean and beautiful, and the doctors are true masters of their craft.",
+      "r8": "We looked for a pediatric dentist for a long time and finally found one. The child goes to the clinic with pleasure.",
+      "r9": "The best dentistry in the city. Highly recommend to everyone!",
+      "r10": "Correcting bites as a whole family. Results are visible within a couple of months."
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Leave a request, and our administrator will contact you within 15 minutes to arrange a convenient appointment time.",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "message": "Your message or question",
+      "submit": "Send Request"
+    },
+    "info": {
+      "address_label": "ADDRESS",
+      "address_value": "42 Lenin St, Moscow",
+      "phone_label": "PHONE",
+      "work_hours_label": "WORKING HOURS",
+      "work_hours_value": "Mon-Sun: 09:00 - 21:00",
+      "email_label": "EMAIL"
+    }
+  }
+}
