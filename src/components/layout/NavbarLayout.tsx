@@ -1,8 +1,10 @@
 'use client';
 
+import { openModal } from '@/src/features/modalSlice';
 import { Link, usePathname, useRouter } from '@/src/i18n/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { useParams } from 'next/navigation';
+import { useDispatch } from 'react-redux';
 
 export default function NavbarLayout() {
   const t = useTranslations('Navbar');
@@ -10,6 +12,7 @@ export default function NavbarLayout() {
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
+  const dispatch = useDispatch()
 
   // Tilni o'zgartirish funksiyasi
   const handleLanguageChange = (nextLocale: string) => {
@@ -55,17 +58,17 @@ export default function NavbarLayout() {
 
         {/* Actions */}
         <div className="flex items-center gap-6">
-          <button className="hidden sm:block bg-cyan-400 text-white px-6 py-2.5 rounded-xl font-semibold hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-200 transition-all active:scale-95">
+          <button onClick={()=> dispatch(openModal())} className=" cursor-pointer hidden sm:block bg-cyan-400 text-white px-6 py-2.5 rounded-xl font-semibold hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-200 transition-all active:scale-95">
             {t('button')}
           </button>
 
           {/* Language Switcher */}
           <div className="flex items-center gap-2 text-sm font-bold border-l pl-6 border-gray-200">
-            {['RU', 'EN', 'UZ'].map((lang, index) => (
+            {['RU', 'EN'].map((lang, index) => (
               <div key={lang} className="flex items-center gap-2">
                 <button
                   onClick={() => handleLanguageChange(lang.toLowerCase())}
-                  className={`transition-colors hover:text-cyan-500 ${
+                  className={` cursor-pointer transition-colors hover:text-cyan-500 ${
                     locale === lang.toLowerCase() ? 'text-cyan-500' : 'text-slate-400'
                   }`}
                 >

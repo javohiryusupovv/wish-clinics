@@ -1,5 +1,17 @@
-// src/components/sections/Hero.tsx
+"use client";
+
+import { openModal } from "@/src/features/modalSlice";
+import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
+import { useDispatch } from "react-redux";
+
+
 export default function Hero() {
+    const dispatch = useDispatch();
+    const navigate = useRouter();
+    const locale = useLocale()
+
+
   return (
     <section className="pt-32 pb-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
@@ -17,10 +29,10 @@ export default function Hero() {
               Современные методы лечения, высококвалифицированные врачи и комфортная атмосфера в самом сердце города.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="cursor-pointer bg-cyan-400 text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-lg shadow-cyan-200 hover:scale-105 transition transform">
+              <button onClick={()=> dispatch(openModal())} className="cursor-pointer bg-cyan-400 text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-lg shadow-cyan-200 hover:scale-105 transition transform">
                 Записаться онлайн
               </button>
-              <button className="bg-white cursor-pointer border border-gray-100 text-slate-800 px-8 py-4 rounded-2xl text-lg font-bold hover:bg-slate-100 transition">
+              <button onClick={()=> navigate.push(`${locale}/services`)} className="bg-white cursor-pointer border border-gray-100 text-slate-800 px-8 py-4 rounded-2xl text-lg font-bold hover:bg-slate-100 transition">
                 Наши услуги
               </button>
             </div>

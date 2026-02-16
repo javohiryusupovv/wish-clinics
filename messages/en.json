@@ -78,11 +78,46 @@
     },
     "info": {
       "address_label": "ADDRESS",
-      "address_value": "42 Lenin St, Moscow",
+      "address_value": "12 Muranovskaya St, Moscow",
       "phone_label": "PHONE",
       "work_hours_label": "WORKING HOURS",
-      "work_hours_value": "Mon-Sun: 09:00 - 21:00",
+      "work_hours_value": "Day and night: 24/7",
       "email_label": "EMAIL"
     }
+  },
+  "Footer": {
+    "description": "Creating healthy and beautiful smiles since 2010. We use only certified materials and equipment.",
+    "columns": {
+      "services": {
+        "title": "Services",
+        "items": [
+          "Therapy",
+          "Implantation",
+          "Orthodontics",
+          "Surgery"
+        ]
+      },
+      "patients": {
+        "title": "For Patients",
+        "items": [
+          "Prices",
+          "Offers",
+          "Tax deduction",
+          "Q&A"
+        ]
+      },
+      "about": {
+        "title": "About Clinic",
+        "items": [
+          "About Us",
+          "Doctors",
+          "Licenses",
+          "Contacts"
+        ]
+      }
+    },
+    "copy": "StomaCare Dental Clinic. All rights reserved.",
+    "policy": "Privacy Policy",
+    "agreement": "User Agreement"
   }
 }

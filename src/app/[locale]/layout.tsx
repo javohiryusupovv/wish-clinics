@@ -4,6 +4,11 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import "../globals.css";
 import Navbar from "../../components/layout/NavbarLayout";
+import Footer from "@/src/components/layout/Footer";
+import { Providers } from "@/src/utils/Provider";
+import BookingModal from "@/src/components/ui/Modal";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 const geistSans = Geist({
@@ -35,10 +40,14 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Navbar /> {/* Navbar doimiy turadi */}
-          <main className={`${geistSans.variable} ${geistMono.variable} font-sans`}>
-            {children} {/* Sahifa mazmuni shu yerga tushadi */}
-          </main>
+          <Providers>
+            <Navbar /> {/* Navbar doimiy turadi */}
+            <main className={`${geistSans.variable} ${geistMono.variable} font-sans`}>
+              {children} {/* Sahifa mazmuni shu yerga tushadi */}
+              <Footer />
+              <BookingModal />
+            </main>
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>
