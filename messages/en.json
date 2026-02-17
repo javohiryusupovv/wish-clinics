@@ -16,6 +16,7 @@
   },
   "Services": {
     "title": "Our Services",
+    "subtitle": "Professional dentistry: innovative technologies and a personalized approach for the health and beauty of your smile.",
     "all_services": "All Services",
     "therapy": "Therapy",
     "therapy_desc": "Gentle treatment of caries, pulpitis, and gum diseases using a microscope.",
@@ -24,7 +25,34 @@
     "implant": "Implantation",
     "implant_desc": "Tooth restoration in one day. Premium implants with a lifetime warranty.",
     "esthetics": "Esthetics",
-    "esthetics_desc": "Creating a perfect 'Hollywood' smile: veneers, whitening, and restoration."
+    "more": "Learn More",
+    "esthetics_desc": "Creating a perfect 'Hollywood' smile: veneers, whitening, and restoration.",
+    "items": {
+      "treatment": {
+        "title": "Dental Treatment",
+        "desc": "Modern methods for treating caries, pulpitis, and periodontitis. We use high-precision microscopes for perfect results."
+      },
+      "implantation": {
+        "title": "Implantation",
+        "desc": "Tooth restoration with world-class implants. Painless installation and a lifetime warranty on materials."
+      },
+      "whitening": {
+        "title": "Whitening",
+        "desc": "Gentle in-office ZOOM 4 whitening. Lightening by 8-10 shades without harming enamel or sensitivity."
+      },
+      "braces": {
+        "title": "Braces",
+        "desc": "Bite correction of any complexity. Metal, ceramic, and sapphire systems for a perfect smile."
+      },
+      "prosthetics": {
+        "title": "Prosthetics",
+        "desc": "Aesthetic veneers, zirconium, and ceramic crowns. Digital modeling of your future smile."
+      },
+      "kids": {
+        "title": "Pediatric Dentistry",
+        "desc": "Painless and fear-free treatment in a playful form. We build healthy dental habits from childhood."
+      }
+    }
   },
   "Specialists": {
     "title": "Our Specialists",
@@ -83,7 +111,18 @@
       "work_hours_label": "WORKING HOURS",
       "work_hours_value": "Day and night: 24/7",
       "email_label": "EMAIL"
-    }
+    },
+    "form_title": "Schedule Your Visit",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "phone": "Phone Number",
+    "service": "Service",
+    "message": "Message (Optional)",
+    "submit": "Confirm Booking Request",
+    "location": "Our Location",
+    "working_hours": "Working Hours",
+    "phone_numbers": "Phone Numbers",
+    "support": "Instant Support"
   },
   "Footer": {
     "description": "Creating healthy and beautiful smiles since 2010. We use only certified materials and equipment.",
@@ -119,5 +158,17 @@
     "copy": "StomaCare Dental Clinic. All rights reserved.",
     "policy": "Privacy Policy",
     "agreement": "User Agreement"
+  },
+  "Gallery": {
+    "title": "Our Gallery",
+    "subtitle": "Take a look at our clinic, modern equipment, and the comfortable environment we provide for your treatment.",
+    "alt": {
+    "interior": "Interior of the modern Wish dental clinic",
+    "equipment": "High-tech advanced dental equipment",
+    "office": "Professional dentist's treatment office",
+    "reception": "Clinic reception and comfortable waiting area",
+    "treatment": "Dental treatment process using a high-precision microscope",
+    "chair": "Ergonomic and comfortable dental chair for patients"
+  }
   }
 }

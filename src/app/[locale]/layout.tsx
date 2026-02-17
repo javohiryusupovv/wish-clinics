@@ -8,7 +8,7 @@ import Footer from "@/src/components/layout/Footer";
 import { Providers } from "@/src/utils/Provider";
 import BookingModal from "@/src/components/ui/Modal";
 import { Suspense } from "react";
-import Loading from "./loading";
+import Loading from "../loading";
 
 
 const geistSans = Geist({

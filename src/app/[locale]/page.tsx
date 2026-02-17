@@ -8,7 +8,7 @@ export default function page() {
   return (
     <div>
         <Hero/>
-        <Services/>
+        <Services limit={4} />
         <Specialists/>
         <Reviews/>
         <Contact/>

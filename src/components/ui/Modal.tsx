@@ -68,7 +68,7 @@ export default function BookingModal() {
         {/* Yopish tugmasi (X) */}
         <button 
           onClick={() => dispatch(closeModal())} 
-          className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors bg-gray-100 rounded-full p-2 w-8 h-8 flex items-center justify-center"
+          className=" cursor-pointer absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors bg-gray-100 rounded-full p-2 w-8 h-8 flex items-center justify-center"
         >
           ✕
         </button>

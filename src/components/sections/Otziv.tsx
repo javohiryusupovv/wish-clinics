@@ -1,12 +1,35 @@
 'use client';
 
+import { useState, useEffect } from 'react'; // Hooklarni import qilish
 import { useTranslations } from 'next-intl';
 import { reviewsData } from '@/constants/data';
 import Marquee from 'react-fast-marquee';
-import Image from 'next/image';
 
 export default function Reviews() {
     const t = useTranslations('Reviews');
+    
+    // Gradient holatini saqlash uchun state
+    const [showGradient, setShowGradient] = useState(true);
+
+    useEffect(() => {
+        // Ekran o'lchamini tekshirish funksiyasi
+        const handleResize = () => {
+            if (window.innerWidth <= 600) {
+                setShowGradient(false);
+            } else {
+                setShowGradient(true);
+            }
+        };
+
+        // Dastlabki yuklanganda tekshirish
+        handleResize();
+
+        // Window resize bo'lganda kuzatish
+        window.addEventListener('resize', handleResize);
+        
+        // Cleanup
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <section className="py-20 bg-slate-50/50 overflow-hidden">
@@ -16,18 +39,28 @@ export default function Reviews() {
                 </h2>
             </div>
 
-            {/* First Marquee (right direction) */}
+            {/* First Marquee */}
             <div className="overflow-visible max-w-[1900px] m-auto w-full mb-[24px]">
-                <Marquee direction="right" speed={30} gradient={true} pauseOnHover={true}>
+                <Marquee 
+                    direction="right" 
+                    speed={30} 
+                    gradient={showGradient} // Dinamik gradient
+                    pauseOnHover={true}
+                >
                     {reviewsData.map((review) => (
                         <ReviewCard key={review.id} review={review} t={t} />
                     ))}
                 </Marquee>
             </div>
 
-            {/* Second Marquee (left direction) */}
+            {/* Second Marquee */}
             <div className="overflow-visible max-w-[1600px] m-auto w-full mb-[24px]">
-                <Marquee direction="left" speed={30} gradient={true} pauseOnHover={true}>
+                <Marquee 
+                    direction="left" 
+                    speed={30} 
+                    gradient={showGradient} // Dinamik gradient
+                    pauseOnHover={true}
+                >
                     {reviewsData
                         .slice()
                         .reverse()
@@ -40,6 +73,7 @@ export default function Reviews() {
     );
 }
 
+// ReviewCard komponenti o'zgarishsiz qoladi...
 // Ichki Card komponenti
 function ReviewCard({ review, t }: any) {
     return (
